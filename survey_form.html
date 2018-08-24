@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Survey</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="container">
+            <p id="description">Let me know how I can improve my portfolio</p>
+
+            <form id="survey-form">
+            <div class="grid-container">
+                
+                <label class="grid-item grid-left" id="name-label">*Name:</label> 
+                <input type="text" class="grid-item grid-right" id="name" placeholder="Enter your Name"  required>
+                <label class="grid-item grid-left" id="email-label">*Email:</label>
+                <input type="email" class="grid-item grid-right" id="email" placeholder="Enter your Email"  required>
+                <label class="grid-item grid-left" id="number-label">*Age:</label>
+                <input type="number" class="grid-item grid-right" id="number" placeholder="Age" min="1" max="99" required>                
+
+                <div class="question grid-item grid-left" id="q1">Which option best describes your current role?</div>
+                <select id="dropdown" class="grid item grid-right">
+                    <option value="" disabled selected>Select your option</option> 
+                    <option value="student">Student</option>
+                    <option value="full-time">Full-Time Job</option>
+                    <option value="part-time">Part-Time Job</option>
+                    <option value="full-time-learner">Full-Time Learner</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+
+                <div class="question grid-item grid-left" id="q2">*How likely is that you would recommend me to a recruiter?</div>
+                <div class="grid-item grid-right">
+                    <input type="radio" name="recommend" value="definitely" required> Definitely<br>
+                    <input type="radio" name="recommend" value="maybe"> Maybe<br>
+                    <input type="radio" name="recommend" value="not-sure"> Not sure<br>
+                </div>
+
+                <div class="question grid-item grid-left" id="q3">What do you like most about me/résumé?</div>
+                <select class="grid-item grid-right">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="projects">Personal Projects</option>
+                    <option value="open-source">Open-source Contributions</option>
+                    <option value="communication">Communication/Soft-skills</option>
+                    <option value="involvement">Involvement in the Community</option>
+                    <option value="drive">Ambition to teach myself coding</option>
+                </select>
+
+                <div class="question grid-item grid-left" id="q4">Things that should be improved on my résumé?</div>
+                
+                <div class="grid-item grid-right" id="q4-checkboxes">
+                    <input type="checkbox" name="skill1" value="front-end">Front-End Projects<br>
+                    <input type="checkbox" name="skill2" value="back-end">Back-end Projects<br>
+                    <input type="checkbox" name="skill3" value="full-stack">Full-Stack Projects<br>
+                    <input type="checkbox" name="skill4" value="open-source">Open-Source Contributions<br>
+                    <input type="checkbox" name="skill5" value="algorithms">Data-Structures/Algorithms<br>
+                    <input type="checkbox" name="skill6" value="certifications">Certifications<br>
+                    <input type="checkbox" name="skill7" value="courses">Additional Courses<br>
+                </div>
+
+                <div class="question grid-item grid-left" id="q5">Any Comments or Suggestions?</div>
+                <textarea rows="4" cols="50" class="grid-item grid-right" placeholder="Enter your comment here..."></textarea>
+            </div>
+                
+            <div id="submit-holder">
+                <input type="submit" id="submit">
+            </div>
+
+            </form>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
